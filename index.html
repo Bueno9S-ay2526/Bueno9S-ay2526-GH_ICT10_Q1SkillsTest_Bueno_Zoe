@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>SkillsTest</title>
+    <!--but i have no skill/j-->
+</head>
+<body style="background-color: rgb(198, 243, 251); color:rgb(4, 4, 164)">
+    <div class="container">
+        <fieldset>
+            <legend>Drinks <i>(Order as much as you want)</i></legend>
+            <input type="checkbox" id="iced mocha" value="121">
+            <label id="iced mocha-label">Iced Mocha</label>
+            <br>
+            <input type="checkbox" id="hot mocha" value="121">
+            <label id="hot mocha-label">Hot Mocha</label>
+            <br>
+            <input type="checkbox" id="hot chocolate" value="100">
+            <label id="hot chocolate-label">Hot Chocolate</label>
+            <br>
+            <input type="checkbox" id="iced vanilla" value="112">
+            <label id="iced vanilla-label">Iced Vanilla</label>
+            <br>
+            <input type="checkbox" id="hot vanilla" value="112">
+            <label id="hot vanilla-label">Hot Vanilla</label>
+            <br>
+            <button type="submit" py-click="make_receipt">Get receipt</button>
+            <br>
+            <br>
+            <b>Receipt</b>
+            <div id="receipt"></div>
+        </fieldset>
+        
+    </div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
